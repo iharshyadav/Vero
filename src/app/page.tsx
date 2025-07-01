@@ -7,6 +7,11 @@ import { useMutation } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
+/**
+ * Renders a page with an input field and a button to trigger a background job using a mutation.
+ *
+ * Allows users to enter a value and start a background job by clicking the button. Displays a success toast notification when the job is started.
+ */
 export default function Home() {
 
    const [value, setvalue] = useState("")
