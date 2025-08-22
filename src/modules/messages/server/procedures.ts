@@ -53,7 +53,7 @@ export const messageRouter = createTRPCRouter({
       if (!existingProject) {
         throw new TRPCError({
           code: "NOT_FOUND",
-          message: "Không tìm thấy dự án",
+          message: "Project not found",
         });
       }
 
